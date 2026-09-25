@@ -1,9 +1,8 @@
-# 100 Days of Code — C (UPES)
+# 100 Days of Code in C
 
-My solutions to the UPES 100 Days of Code daily challenge.
-Two problems a day for the first 50 days, one a day after that.
+Solving C problems every day for 100 days.
 
-Each file has the question and its sample test cases as a comment at the top.
+Each file has the problem and its sample test cases at the top.
 
 ```bash
 gcc Day-01/Q1.c -o q1 && ./q1
