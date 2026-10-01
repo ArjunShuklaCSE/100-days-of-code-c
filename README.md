@@ -1,12 +1,27 @@
 # 100 Days of Code in C
 
-Solving C problems every day for 100 days.
+[![Check solutions](https://github.com/ArjunShuklaCSE/100-days-of-code-c/actions/workflows/check.yml/badge.svg)](https://github.com/ArjunShuklaCSE/100-days-of-code-c/actions/workflows/check.yml)
+![Problems solved](https://img.shields.io/badge/problems_solved-103-8b5cf6)
+![Language](https://img.shields.io/badge/language-C11-0b0c10)
+[![License](https://img.shields.io/badge/license-MIT-0b0c10)](LICENSE)
 
-Each file has the problem and its sample test cases at the top.
+My solutions to the [Basic Coding with C](https://maitysoumik.github.io/basic-coding-with-c/) 100-day challenge at UPES, started on 10 August 2026: two problems a day for the first 50 days, then one a day. Each file starts with the problem statement and its sample test cases, followed by the solution.
+
+## Run a solution
 
 ```bash
-gcc Day-01/Q1.c -o q1 && ./q1
+gcc -std=c11 Day-01/Q1.c -o q1 && ./q1
 ```
+
+## Check every solution
+
+```bash
+node scripts/check.mjs
+```
+
+This compiles every solution and runs it against the sample cases in its header. GitHub Actions runs it on every push. Eight sample answers in the original problem set are wrong or describe the output instead of showing it (it lists 1 + 3/4 + 5/6 as 3.3, for example, when it's 2.58). They're listed with the correct values in [`scripts/check.mjs`](scripts/check.mjs) and skipped.
+
+## Progress
 
 | Day | Problems |
 |-----|----------|
