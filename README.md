@@ -78,3 +78,4 @@ This compiles every solution and runs it against the sample cases in its header.
 | 51 | [Q101](Day-51/Q101.c) |
 | 52 | [Q102](Day-52/Q102.c) |
 | 53 | [Q103](Day-53/Q103.c) |
+| 54 | [Q104](Day-54/Q104.c) |
