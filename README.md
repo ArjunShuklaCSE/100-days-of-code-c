@@ -1,7 +1,7 @@
 # 100 Days of Code in C
 
 [![Check solutions](https://github.com/ArjunShuklaCSE/100-days-of-code-c/actions/workflows/check.yml/badge.svg)](https://github.com/ArjunShuklaCSE/100-days-of-code-c/actions/workflows/check.yml)
-![Problems solved](https://img.shields.io/badge/problems_solved-105-8b5cf6)
+![Problems solved](https://img.shields.io/badge/problems_solved-106-8b5cf6)
 ![Language](https://img.shields.io/badge/language-C11-0b0c10)
 [![License](https://img.shields.io/badge/license-MIT-0b0c10)](LICENSE)
 
@@ -80,3 +80,4 @@ This compiles every solution and runs it against the sample cases in its header.
 | 53 | [Q103](Day-53/Q103.c) |
 | 54 | [Q104](Day-54/Q104.c) |
 | 55 | [Q105](Day-55/Q105.c) |
+| 56 | [Q106](Day-56/Q106.c) |
