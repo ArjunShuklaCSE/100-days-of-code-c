@@ -19,6 +19,7 @@ const errata = {
   'Day-25/Q50.c:2': 'the sample is a note, not an output',
   'Day-26/Q52.c:1': 'the sample describes the pattern instead of showing it',
   'Day-27/Q54.c:1': 'the sample describes the pattern instead of showing it',
+  'Day-70/Q120.c:1': 'the sample drops the full stop at the end of the sentence',
 };
 
 const build = mkdtempSync(join(tmpdir(), 'c100-'));
