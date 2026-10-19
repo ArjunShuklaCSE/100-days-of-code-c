@@ -64,7 +64,9 @@ for (const day of readdirSync('.').filter(name => /^Day-\d+$/.test(name)).sort()
         skipped++;
         continue;
       }
-      const run = spawnSync(exe, { input: `${stripBlankEdges(input)}\n`, encoding: 'utf8', timeout: 5000 });
+      // run inside the build folder so files a solution writes (like info.txt) stay out of the repo.
+      // Day-71/Q121.c writes info.txt and Day-72/Q122.c reads it back, which works because files run in order.
+      const run = spawnSync(exe, { input: `${stripBlankEdges(input)}\n`, encoding: 'utf8', timeout: 5000, cwd: build });
       if (normalize(run.stdout ?? '') === normalize(output)) passed++;
       else {
         failed++;
