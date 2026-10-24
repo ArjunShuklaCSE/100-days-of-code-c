@@ -21,6 +21,7 @@ const errata = {
   'Day-27/Q54.c:1': 'the sample describes the pattern instead of showing it',
   'Day-70/Q120.c:1': 'the sample drops the full stop at the end of the sentence',
   'Day-73/Q123.c:1': 'the file has 33 characters and 6 words, not 31 and 5',
+  'Day-76/Q126.c:1': 'the sample describes the output instead of showing it',
 };
 
 const build = mkdtempSync(join(tmpdir(), 'c100-'));
