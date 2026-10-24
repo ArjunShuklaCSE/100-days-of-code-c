@@ -1,7 +1,7 @@
 # 100 Days of Code in C
 
 [![Check solutions](https://github.com/ArjunShuklaCSE/100-days-of-code-c/actions/workflows/check.yml/badge.svg)](https://github.com/ArjunShuklaCSE/100-days-of-code-c/actions/workflows/check.yml)
-![Problems solved](https://img.shields.io/badge/problems_solved-122-8b5cf6)
+![Problems solved](https://img.shields.io/badge/problems_solved-123-8b5cf6)
 ![Language](https://img.shields.io/badge/language-C11-0b0c10)
 [![License](https://img.shields.io/badge/license-MIT-0b0c10)](LICENSE)
 
@@ -19,7 +19,7 @@ gcc -std=c11 Day-01/Q1.c -o q1 && ./q1
 node scripts/check.mjs
 ```
 
-This compiles every solution and runs it against the sample cases in its header. GitHub Actions runs it on every push. Nine sample answers in the original problem set are wrong or describe the output instead of showing it (it lists 1 + 3/4 + 5/6 as 3.3, for example, when it's 2.58). They're listed with the correct values in [`scripts/check.mjs`](scripts/check.mjs) and skipped.
+This compiles every solution and runs it against the sample cases in its header. GitHub Actions runs it on every push. Ten sample answers in the original problem set are wrong or describe the output instead of showing it (it lists 1 + 3/4 + 5/6 as 3.3, for example, when it's 2.58). They're listed with the correct values in [`scripts/check.mjs`](scripts/check.mjs) and skipped.
 
 ## Progress
 
@@ -97,3 +97,4 @@ This compiles every solution and runs it against the sample cases in its header.
 | 70 | [Q120](Day-70/Q120.c) |
 | 71 | [Q121](Day-71/Q121.c) |
 | 72 | [Q122](Day-72/Q122.c) |
+| 73 | [Q123](Day-73/Q123.c) |

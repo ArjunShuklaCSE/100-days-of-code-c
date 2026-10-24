@@ -5,7 +5,7 @@
 // A header looks like:  Input 1: <stdin lines>  Output 1: <expected stdout>
 // Output is compared line by line, ignoring trailing spaces and blank lines at the start or end.
 import { execFileSync, spawnSync } from 'node:child_process';
-import { readdirSync, readFileSync, mkdtempSync } from 'node:fs';
+import { readdirSync, readFileSync, writeFileSync, mkdtempSync } from 'node:fs';
 import { join } from 'node:path';
 import { tmpdir } from 'node:os';
 
@@ -20,9 +20,19 @@ const errata = {
   'Day-26/Q52.c:1': 'the sample describes the pattern instead of showing it',
   'Day-27/Q54.c:1': 'the sample describes the pattern instead of showing it',
   'Day-70/Q120.c:1': 'the sample drops the full stop at the end of the sentence',
+  'Day-73/Q123.c:1': 'the file has 33 characters and 6 words, not 31 and 5',
 };
 
 const build = mkdtempSync(join(tmpdir(), 'c100-'));
+
+// Files the File Handling samples open, with the contents their sample cases describe.
+const fixtures = {
+  'sample.txt': 'Hello world\nThis is C programming',
+  'source.txt': 'Learning C File Handling',
+  'data.txt': 'Hello world',
+};
+for (const [name, content] of Object.entries(fixtures)) writeFileSync(join(build, name), content);
+
 const stripBlankEdges = text => text.replace(/^\n+|\n+$/g, '');
 const normalize = text =>
   stripBlankEdges(
