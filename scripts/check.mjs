@@ -22,6 +22,7 @@ const errata = {
   'Day-70/Q120.c:1': 'the sample drops the full stop at the end of the sentence',
   'Day-73/Q123.c:1': 'the file has 33 characters and 6 words, not 31 and 5',
   'Day-76/Q126.c:1': 'the sample describes the output instead of showing it',
+  'Day-77/Q127.c:1': 'the sample shows what ends up in output.txt, not what the program prints',
 };
 
 const build = mkdtempSync(join(tmpdir(), 'c100-'));
@@ -31,6 +32,7 @@ const fixtures = {
   'sample.txt': 'Hello world\nThis is C programming',
   'source.txt': 'Learning C File Handling',
   'data.txt': 'Hello world',
+  'input.txt': 'Hello World\nC programming',
 };
 for (const [name, content] of Object.entries(fixtures)) writeFileSync(join(build, name), content);
 
