@@ -33,6 +33,7 @@ const fixtures = {
   'source.txt': 'Learning C File Handling',
   'data.txt': 'Hello world',
   'input.txt': 'Hello World\nC programming',
+  'text.txt': 'Welcome to C language',
 };
 for (const [name, content] of Object.entries(fixtures)) writeFileSync(join(build, name), content);
 
