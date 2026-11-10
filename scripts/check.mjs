@@ -23,6 +23,7 @@ const errata = {
   'Day-73/Q123.c:1': 'the file has 33 characters and 6 words, not 31 and 5',
   'Day-76/Q126.c:1': 'the sample describes the output instead of showing it',
   'Day-77/Q127.c:1': 'the sample shows what ends up in output.txt, not what the program prints',
+  'Day-92/Q142.c:1': 'the sample describes the input and output instead of showing them',
 };
 
 const build = mkdtempSync(join(tmpdir(), 'c100-'));
